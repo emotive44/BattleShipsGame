@@ -1,4 +1,4 @@
-import { generateRightShip } from './generateShip.js';
+import { generateRightShip, generateLeftShip } from './generateShip.js';
 
 // generate random number between 0 - max
 const getRandomInt = (max) => {
@@ -17,5 +17,6 @@ const getRandomInt = (max) => {
     battleGrid.appendChild(span);
   }
 
-  generateRightShip(getRandomInt(100), 4);
+  // generateRightShip(getRandomInt(100), 4);
+  generateLeftShip(getRandomInt(100), 4);
 })();
