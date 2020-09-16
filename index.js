@@ -1,4 +1,8 @@
-import { generateRightShip, generateLeftShip } from './generateShip.js';
+import {
+  generateRightShip,
+  generateLeftShip,
+  generateTopShip,
+} from './generateShip.js';
 
 // generate random number between 0 - max
 const getRandomInt = (max) => {
@@ -18,5 +22,6 @@ const getRandomInt = (max) => {
   }
 
   // generateRightShip(getRandomInt(100), 4);
-  generateLeftShip(getRandomInt(100), 4);
+  // generateLeftShip(getRandomInt(100), 4);
+  generateTopShip(getRandomInt(100), 4);
 })();
