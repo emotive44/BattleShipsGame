@@ -19,6 +19,7 @@ const shoot = () => {
   let infoMsg = document.getElementById('shots-alert');
   const regex = new RegExp('^[A-J][1-9]?(0|[1-9])$');
   let row, columns;
+  let sunkCount = 0;
 
   infoMsg.style.display = 'block';
   columns = coordinates.charAt(0);
@@ -50,6 +51,21 @@ const shoot = () => {
   countOfShoots++;
   shootedPlaces.push(dotCount);
 
-  infoMsg.innerText = '*** MISS ***';
-  target.innerHTML = '&ndash;';
+  // show alert notifications
+  if (target.dataset.ship === 'ship') {
+    target.innerHTML = 'x';
+    infoMsg.innerText = '*** SUNK ***';
+    sunkCount++;
+  } else {
+    infoMsg.innerText = '*** MISS ***';
+    target.innerHTML = '&ndash;';
+  }
+
+  if (sunkCount === 1) {
+    let winAlert = document.getElementById('win-alert');
+    winAlert.style.display = 'block';
+    winAlert.innerHTML = `Well done! You completed the game in ${countOfShoots} shots.`;
+
+    document.getElementById('shots-alert').style.display = 'none';
+  }
 };

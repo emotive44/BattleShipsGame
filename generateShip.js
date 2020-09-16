@@ -146,7 +146,7 @@ const generateShips = () => {
   let randomNumber;
   do {
     randomNumber = getRandomInt(100);
-    console.log(randomNumber);
+
     if (generateRightShip(randomNumber, countOfShips < 1 ? 5 : 4) !== false) {
       countOfShips++;
       continue;
