@@ -79,4 +79,32 @@ const generateTopShip = (row, widthOfShip) => {
   }
 };
 
-export { generateRightShip, generateLeftShip, generateTopShip };
+const generateBottomShip = (row, widthOfShip) => {
+  let currentWidthOfShip = 0;
+  let limitNumber = row + widthOfShip * 10;
+
+  for (let i = 0; i < widthOfShip; i++) {
+    let currNumber = row + i * 10;
+    if (
+      document.getElementById(`dot-${currNumber}`).dataset.ship === 'empty' &&
+      limitNumber <= 100 &&
+      currNumber <= limitNumber
+    ) {
+      currentWidthOfShip++;
+    }
+  }
+
+  if (currentWidthOfShip === widthOfShip) {
+    for (let i = 0; i < widthOfShip; i++) {
+      document.getElementById(`dot-${row + i * 10}`).style.background = 'red';
+      document.getElementById(`dot-${row + i * 10}`).dataset.ship = 'ship';
+    }
+  }
+};
+
+export {
+  generateRightShip,
+  generateLeftShip,
+  generateTopShip,
+  generateBottomShip,
+};
