@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+.numbers {
+  display: flex;
+  width: 27rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.numbers div {
+  width: 2.5rem;
+  text-align: center;
+}
+
 .board-container {
   display: flex;
   width: 28.4rem;
