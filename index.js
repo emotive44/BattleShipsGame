@@ -10,3 +10,7 @@
     battleGrid.appendChild(span);
   }
 })();
+
+const shoot = () => {
+  console.log('shoot');
+};
