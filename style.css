@@ -1,3 +1,22 @@
-body {
-  background: red;
+* {
+  box-sizing: border-box;
+}
+
+#battle-board {
+  width: 27rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#battle-board span {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid black;
+  margin: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
 }
