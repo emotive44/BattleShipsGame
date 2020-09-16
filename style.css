@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+.board-container {
+  display: flex;
+  width: 28.4rem;
+  margin: 0 auto;
+}
+
+.letters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.letters div {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.1rem;
+}
+
 #battle-board {
   width: 27rem;
   display: flex;
