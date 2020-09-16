@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+#win-alert,
+#shots-alert {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* display: none; */
+}
+
+#win-alert {
+  margin-top: 1rem;
+}
+
 .numbers {
   display: flex;
   width: 27rem;
@@ -12,6 +25,7 @@
 .numbers div {
   width: 2.5rem;
   text-align: center;
+  padding-left: 0.5rem;
 }
 
 .board-container {
