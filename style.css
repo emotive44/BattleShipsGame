@@ -19,7 +19,7 @@
   margin: 0 auto;
   margin-bottom: 1rem;
   text-align: center;
-  /* display: none; */
+  display: none;
 }
 
 #win-alert {
