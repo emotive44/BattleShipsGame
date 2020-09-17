@@ -30,7 +30,7 @@ const generateRightShip = (row, widthOfShip) => {
 
   if (currentWidthOfShip === widthOfShip) {
     for (let i = 0; i < widthOfShip; i++) {
-      document.getElementById(`dot-${row + i}`).style.background = 'red';
+      // document.getElementById(`dot-${row + i}`).style.background = 'red';
       document.getElementById(`dot-${row + i}`).dataset.ship = 'ship';
     }
   }
@@ -67,7 +67,7 @@ const generateLeftShip = (row, widthOfShip) => {
 
   if (currentWidthOfShip === widthOfShip) {
     for (let i = 0; i < widthOfShip; i++) {
-      document.getElementById(`dot-${row - i}`).style.background = 'red';
+      // document.getElementById(`dot-${row - i}`).style.background = 'red';
       document.getElementById(`dot-${row - i}`).dataset.ship = 'ship';
     }
   }
@@ -98,7 +98,7 @@ const generateTopShip = (row, widthOfShip) => {
 
   if (currentWidthOfShip === widthOfShip) {
     for (let i = 0; i < widthOfShip; i++) {
-      document.getElementById(`dot-${row - i * 10}`).style.background = 'red';
+      // document.getElementById(`dot-${row - i * 10}`).style.background = 'red';
       document.getElementById(`dot-${row - i * 10}`).dataset.ship = 'ship';
     }
   }
@@ -128,7 +128,7 @@ const generateBottomShip = (row, widthOfShip) => {
 
   if (currentWidthOfShip === widthOfShip) {
     for (let i = 0; i < widthOfShip; i++) {
-      document.getElementById(`dot-${row + i * 10}`).style.background = 'red';
+      // document.getElementById(`dot-${row + i * 10}`).style.background = 'red';
       document.getElementById(`dot-${row + i * 10}`).dataset.ship = 'ship';
     }
   }
@@ -141,6 +141,7 @@ const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max)) || 1;
 };
 
+// create 3 random ships
 const generateShips = () => {
   let countOfShips = 0;
   let randomNumber;

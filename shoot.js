@@ -11,6 +11,7 @@ const letterValue = {
   J: 90,
 };
 // global variables
+let sunkCount = 0;
 let countOfShoots = 0;
 const shootedPlaces = [];
 
@@ -19,7 +20,6 @@ const shoot = () => {
   let infoMsg = document.getElementById('shots-alert');
   const regex = new RegExp('^[A-J][1-9]?(0|[1-9])$');
   let row, columns;
-  let sunkCount = 0;
 
   infoMsg.style.display = 'block';
   columns = coordinates.charAt(0);
@@ -61,7 +61,7 @@ const shoot = () => {
     target.innerHTML = '&ndash;';
   }
 
-  if (sunkCount === 1) {
+  if (sunkCount === 13) {
     let winAlert = document.getElementById('win-alert');
     winAlert.style.display = 'block';
     winAlert.innerHTML = `Well done! You completed the game in ${countOfShoots} shots.`;

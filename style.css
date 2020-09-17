@@ -68,7 +68,7 @@
 #battle-board span {
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0.1rem;
   display: flex;
   justify-content: center;
