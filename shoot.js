@@ -23,6 +23,7 @@ const shoot = () => {
 
   infoMsg.style.display = 'block';
   columns = coordinates.charAt(0);
+  document.getElementById('coordinates').value = '';
 
   if (coordinates.length > 2) {
     row = +coordinates.slice(-2);
